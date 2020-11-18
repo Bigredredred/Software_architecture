@@ -1,7 +1,6 @@
-package pkg.zhaoge;
+package pkg.zhaoge.Interpreter;
 
 import java.util.Scanner;
-import java.util.function.Function;
 
 public class events {
     public static void ExpressionEvent(){

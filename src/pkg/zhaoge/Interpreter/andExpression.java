@@ -1,4 +1,4 @@
-package pkg.zhaoge;
+package pkg.zhaoge.Interpreter;
 
 // 非终结符表达式类
 class andExpression implements Expression
