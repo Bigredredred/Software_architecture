@@ -1,6 +1,6 @@
 package pkg.zhaoge.Bridgepattern;
 
-public class TurnOff implements Operation{
+public class TurnDown implements Operation{
 
     @Override
     public String getOperationName() {
