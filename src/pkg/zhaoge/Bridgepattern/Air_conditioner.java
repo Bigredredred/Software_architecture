@@ -10,7 +10,7 @@ public class Air_conditioner extends Device{
 
     @Override
     public String getName() {
-        return "空调"+this.operation.getOperationName();
+        return "温度控制器"+this.operation.getOperationName();
     }
 
 
