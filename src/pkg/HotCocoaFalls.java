@@ -12,12 +12,10 @@ public class HotCocoaFalls implements Scene{
     @Override
     public void welcome() {
         System.out.println("Welcome to HotCocoaFalls!");
-        introduce();
+        State();
     }
 
-    public void introduce() {
-        //李东霖？
-
+    public void State() {
         //厂长介绍这里的温度湿度控制器
         CurrentState currentState = new CurrentState();
         //温度
