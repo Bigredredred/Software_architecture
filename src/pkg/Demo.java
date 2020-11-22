@@ -1,6 +1,7 @@
 package pkg;
 
 import pkg.zyl.Interpreter.events;
+import pkg.mwb.ob_pa.ObserverPattern;
 
 public class Demo {
     public static void main(String[] args) {
@@ -8,9 +9,12 @@ public class Demo {
         System.out.println("门口的威利旺卡已经等候多时了");
         System.out.println("威利旺卡：欢迎参观我的巧克力工厂！");
         System.out.println(".........");
-        System.out.println("工厂大厅剧情空缺");
-        System.out.println(".........");
         //------------------------------------------------------------------------------------------------
+        ObserverPattern.openvent();
+        //------------------------------------------------------------------------------------------------
+        
+        //------------------------------------------------------------------------------------------------
+        System.out.println(".........");
         events.ExpressionEvent();
         //身份验证事件
         //------------------------------------------------------------------------------------------------

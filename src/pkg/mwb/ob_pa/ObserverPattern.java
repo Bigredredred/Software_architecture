@@ -1,9 +1,9 @@
-package pkg.mwb.观察者中介者;
+package pkg.mwb.ob_pa;
 
 import java.util.*;
 
 public class ObserverPattern {
-    public void openvent() {
+    public static void openvent() {
         Subject subject = new ConcreteSubject();
         Observer obs1 = new Light1();
         Observer obs2 = new Light2();
@@ -37,6 +37,7 @@ abstract class Subject {
 class ConcreteSubject extends Subject {
     public void notifyObserver() {
         System.out.println("欢迎来到旺卡的巧克力工厂");
+        System.out.println("威利旺卡大手一挥");
         System.out.println("--------------");
 
         for (Object obs : observers) {

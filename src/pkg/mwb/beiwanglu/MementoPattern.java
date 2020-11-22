@@ -1,8 +1,8 @@
-package pkg.mwb.备忘录;
+package pkg.mwb.beiwanglu;
 
 public class MementoPattern
 {
-    public void mpevent()
+    public static void mpevent()
     {
         Originator or=new Originator(); //创建和恢复备忘录
         Caretaker cr=new Caretaker(); //保存和获取备忘录
