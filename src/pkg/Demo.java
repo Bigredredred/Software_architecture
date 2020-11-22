@@ -2,6 +2,7 @@ package pkg;
 
 import pkg.zyl.Interpreter.events;
 import pkg.mwb.ob_pa.ObserverPattern;
+import pkg.LDL.Strategy.strategyDemo;
 
 public class Demo {
     public static void main(String[] args) {
@@ -12,7 +13,8 @@ public class Demo {
         //------------------------------------------------------------------------------------------------
         ObserverPattern.openvent();
         //------------------------------------------------------------------------------------------------
-        
+        strategyDemo theStrategy = new strategyDemo();
+        theStrategy.strategyEvent();
         //------------------------------------------------------------------------------------------------
         System.out.println(".........");
         events.ExpressionEvent();
