@@ -4,11 +4,18 @@ import pkg.wck.Iterator.IteratorDemo;
 import pkg.wck.Builder.MakingWorkShop;
 
 public class ChocolateMakingWorkshop implements Scene {
+    private  static ChocolateMakingWorkshop Instance =new ChocolateMakingWorkshop();
     @Override
     public void welcome() {
         System.out.println("Welcome to ChocolateMakingWorkshop!");
         Builder();
     }
+
+    public static ChocolateMakingWorkshop getInstance(){
+        return Instance;
+    }
+
+    private ChocolateMakingWorkshop(){}
 
     public void Builder(){
         MakingWorkShop makingWorkShop = new MakingWorkShop();

@@ -2,7 +2,7 @@ package pkg.Appearance;
 public class RawMaterialProduction {
     public Hazelnut hazelnut;
     public Cacao cacao;
-    RawMaterialProduction()
+    public RawMaterialProduction()
     {
         hazelnut=new Hazelnut();
         cacao=new Cacao();

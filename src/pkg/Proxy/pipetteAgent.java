@@ -5,10 +5,15 @@ public class pipetteAgent implements pipette{
     //被代理的导管
     private pipetteEntity PipetteEntity;
     //开始代理
-    pipetteAgent(pipetteEntity pipetteEntity)
+    public pipetteAgent(pipetteEntity pipetteEntity)
     {
         this.PipetteEntity=pipetteEntity;
     }
+
+    public pipetteAgent() {
+
+    }
+
     @Override
     public void move() {
      System.out.println("吸管正在移动.....\n");

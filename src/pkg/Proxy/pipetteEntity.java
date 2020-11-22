@@ -2,9 +2,9 @@ package pkg.Proxy;
 
 public class pipetteEntity implements pipette{
     public String name;
-    pipetteEntity()
+    public pipetteEntity()
     {
-
+       name="001";
     }
     @Override
     public void move() {

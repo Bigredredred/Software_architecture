@@ -5,6 +5,14 @@ import pkg.hzc.Prototype.ChocoPacking.ChocoCache;
 import pkg.wck.Builder.ProductAssemblyWorkShop;
 
 public class ProductAssemblyWorkshop implements Scene {
+    private static ProductAssemblyWorkshop Instance = new ProductAssemblyWorkshop();
+
+    public static ProductAssemblyWorkshop getInstance(){
+        return Instance;
+    }
+
+    private ProductAssemblyWorkshop() { }
+
     @Override
     public void welcome() {
         System.out.println("Welcome to ProductAssemblyWorkshop!");

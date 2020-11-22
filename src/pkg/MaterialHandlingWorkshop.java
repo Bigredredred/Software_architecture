@@ -1,14 +1,56 @@
 package pkg;
+import pkg.Appearance.RawMaterialProduction;
+import pkg.Appearance.RawMaterialProductionWorkshop;
 import pkg.hzc.Prototype.BoilerProducing.BoilerCache;
 import pkg.hzc.Prototype.BoilerProducing.Boiler;
+import pkg.Appearance.*;
+import pkg.mwb.beiwanglu.MementoPattern;
 
 public class MaterialHandlingWorkshop implements Scene {
     @Override
     public void welcome() {
-        System.out.println("Welcome to MaterialHandlingWorkshop!");
+        System.out.println("Willy Wonka take the little boy to the raw material production");
+        System.out.println("Wonka:Welcome to Raw Material Production Workshop my friend! ");
+        System.out.println("All raw materials will be obtained from here");
+        System.out.println("Willy Wonka start displaying and pointing the cane over there.");
+        //开始展示榛果生产线
+        ShowHazelnut();
+        System.out.println("Wonka:Over here is our cocoa bean processing ");
+        ShowCacao();
+        System.out.println("Come with me, let's go see something more interesting.");
         Prototype();
     }
+    //单例模式
+    private static MaterialHandlingWorkshop materialHandlingWorkshop;
+    //原料生产类
+    private RawMaterialProduction rawMaterialProduction ;
+    //构造函数
+    MaterialHandlingWorkshop()
+    {
+        rawMaterialProduction=new RawMaterialProduction();
+    }
 
+    //单例模式访问接口
+    public static MaterialHandlingWorkshop EnterMaterialProductionWorkshop()
+    {
+        if(materialHandlingWorkshop==null) {
+            materialHandlingWorkshop = new MaterialHandlingWorkshop();
+        }
+        return materialHandlingWorkshop;
+    }
+
+
+
+    //榛果处理生产展示事件
+    private void ShowHazelnut()
+    {
+        rawMaterialProduction.HazelnutSayHello();
+    }
+    //可可豆生产展示事件
+    private void ShowCacao()
+    {
+        rawMaterialProduction.CacaoSayHello();
+    }
     //厂长讲述加工虚空原料的过程（例如仓鼠加工榛果）
     //Code
 
@@ -33,5 +75,9 @@ public class MaterialHandlingWorkshop implements Scene {
 
         //保险箱，马文博
         //code
+        MementoPattern.mpevent();
     }
+
+
+
 }

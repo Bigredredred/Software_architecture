@@ -4,7 +4,7 @@ public class StoredStuffs implements StoredStuff{
     public String name;
     public int number;
 
-    StoredStuffs(String name,int number)
+    public StoredStuffs(String name, int number)
     {
         this.name=name;
         this.number=number;
