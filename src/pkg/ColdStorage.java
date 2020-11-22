@@ -10,7 +10,9 @@ public class ColdStorage implements Scene{
     private ColdStoragePlants coldStoragePlants;
     private int temp;  //冷库的温度
     private int[][] Capacity = new int[20][20];  //冷库的分布，0表示位置为空，1代表该位置以被占
-    private ColdStorage(){}
+    private ColdStorage(){
+        coldStoragePlants=new ColdStoragePlants();
+    }
     //将巧克力放入冷库
     public boolean putIn(int x,int y) {
         System.out.println("将包装好的巧克力放入冷库的横"+x+"纵向"+y);
@@ -86,7 +88,7 @@ public class ColdStorage implements Scene{
         stuffs.InStorage();
         System.out.println("另一边，一些刚产出的产品被小矮人们装车即将运往各个商场\n" +
                 "Wonka:哇喔，今天还有另外一些货物即将被送往世界各地，让我的小朋友看看是些啥\n" +
-                "Wonka从车上，啪很快的拿到一盒产品并打开，\n" +
+                "Wonka从车上，很快的拿到一盒产品并打开，\n" +
                 "Wonka:o!!!!这正好是新鲜出炉的耗子尾汁，尝尝鲜吧孩子\n" +
                 "Wonka喝了一口之后递给小男孩，可惜小男孩全部防出去了");
         stuffs=coldStoragePlants.getStoredStuffs("耗子尾汁");
@@ -95,6 +97,6 @@ public class ColdStorage implements Scene{
     }
     @Override
     public void welcome() {
-        System.out.println("Welcome to ColdStorage!");
+        EnterColdStorage();
     }
 }

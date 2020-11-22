@@ -9,7 +9,8 @@ public class Hazelnut implements RawMaterial {
     }
     @Override
     public void product() {
-        System.out.println("The squirrel opened the hazelnut and get the nuts \n");
+        System.out.println("The squirrel" +
+                " opened the hazelnut and get the nuts \n");
         System.out.println("Strange nuts and shells plus one\n");
         this.nut++;
         this.Nutshell++;

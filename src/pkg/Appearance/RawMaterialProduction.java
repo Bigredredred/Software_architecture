@@ -1,4 +1,5 @@
 package pkg.Appearance;
+import pkg.LDL.*;
 public class RawMaterialProduction {
     public Hazelnut hazelnut;
     public Cacao cacao;
@@ -11,6 +12,7 @@ public class RawMaterialProduction {
     //榛果生产展示事件
     public void HazelnutSayHello()
     {
+
        System.out.println("A little squirrel saw the little boy and his group and greeted them happily, wagging his tail.\n");
         HazenutProduction();
         System.out.println("Wonka:My squirrel friends came from as far away as Siberia, and they loved the work!\n");
