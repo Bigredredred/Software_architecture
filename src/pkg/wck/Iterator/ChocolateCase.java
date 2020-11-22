@@ -1,8 +1,8 @@
 package pkg.wck.Iterator;
 
 
-import pkg.zhaoge.ChainofResponsibility.chocolategood;
-import pkg.zhaoge.ChainofResponsibility.Color;
+import pkg.zyl.ChainofResponsibility.chocolategood;
+import pkg.zyl.ChainofResponsibility.Color;
 
 public class ChocolateCase implements Container {
     //创建实现Container接口的实体类

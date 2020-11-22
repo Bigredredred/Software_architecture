@@ -1,0 +1,70 @@
+package pkg.mwb.观察者中介者;
+
+import java.util.*;
+
+public class ObserverPattern {
+    public void openvent() {
+        Subject subject = new ConcreteSubject();
+        Observer obs1 = new Light1();
+        Observer obs2 = new Light2();
+        Observer obs3 = new Light3();
+        subject.add(obs1);
+        subject.add(obs2);
+        subject.add(obs3);
+        subject.notifyObserver();
+    }
+}
+
+//抽象目标
+abstract class Subject {
+    protected List<Observer> observers = new ArrayList<Observer>();
+
+    //增加观察者方法
+    public void add(Observer observer) {
+        observers.add(observer);
+    }
+
+    //删除观察者方法
+    public void remove(Observer observer) {
+        observers.remove(observer);
+    }
+
+    public abstract void notifyObserver(); //通知观察者方法
+}
+
+//具体目标
+//目标发生变化
+class ConcreteSubject extends Subject {
+    public void notifyObserver() {
+        System.out.println("欢迎来到旺卡的巧克力工厂");
+        System.out.println("--------------");
+
+        for (Object obs : observers) {
+            ((Observer) obs).response();
+        }
+
+    }
+}
+
+//抽象观察者
+interface Observer {
+    void response(); //做出反应
+}
+
+//具体观察者
+//灯光做出变化
+class Light1 implements Observer {
+    public void response() {
+        System.out.println("大厅地板荧光灯打开");
+    }
+}
+class Light2 implements Observer {
+    public void response() {
+        System.out.println("大厅墙壁上悬挂的火把点燃");
+    }
+}
+class Light3 implements Observer {
+    public void response() {
+        System.out.println("屋顶的水晶灯闪烁");
+    }
+}

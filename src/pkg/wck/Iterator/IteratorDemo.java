@@ -1,9 +1,9 @@
 package pkg.wck.Iterator;
 
-import pkg.zhaoge.ChainofResponsibility.ColorCheck;
-import pkg.zhaoge.ChainofResponsibility.SizeCheck;
-import pkg.zhaoge.ChainofResponsibility.WeightCheck;
-import pkg.zhaoge.ChainofResponsibility.chocolategood;
+import pkg.zyl.ChainofResponsibility.ColorCheck;
+import pkg.zyl.ChainofResponsibility.SizeCheck;
+import pkg.zyl.ChainofResponsibility.WeightCheck;
+import pkg.zyl.ChainofResponsibility.chocolategood;
 
 public class IteratorDemo {
     public IteratorDemo (){

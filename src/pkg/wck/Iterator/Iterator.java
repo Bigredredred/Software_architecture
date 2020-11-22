@@ -1,6 +1,6 @@
 package pkg.wck.Iterator;
 
-import pkg.zhaoge.ChainofResponsibility.chocolategood;
+import pkg.zyl.ChainofResponsibility.chocolategood;
 
 public interface Iterator {
     //迭代器接口

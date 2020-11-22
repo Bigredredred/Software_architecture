@@ -3,9 +3,9 @@ package pkg;
 import pkg.hzc.State.AirConditioner;
 import pkg.hzc.State.CurrentState;
 import pkg.hzc.State.HumidityController;
-import pkg.zhaoge.Bridgepattern.Air_conditioner;
-import pkg.zhaoge.Bridgepattern.TurnUp;
-import pkg.zhaoge.Bridgepattern.humidityController;
+import pkg.zyl.Bridgepattern.Air_conditioner;
+import pkg.zyl.Bridgepattern.TurnUp;
+import pkg.zyl.Bridgepattern.humidityController;
 
 
 public class HotCocoaFalls implements Scene{
