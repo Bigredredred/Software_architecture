@@ -1,4 +1,4 @@
-package Flyweight;
+package pkg.Flyweight;
 
 public class StoredStuffs implements StoredStuff{
     public String name;

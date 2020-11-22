@@ -1,4 +1,4 @@
-package Appearance;
+package pkg.Appearance;
 public class Hazelnut implements RawMaterial {
     private int nut;
     private int Nutshell;

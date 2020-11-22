@@ -1,4 +1,4 @@
-package Appearance;
+package pkg.Appearance;
 
 public class RawMaterialProductionWorkshop {
     //单例模式

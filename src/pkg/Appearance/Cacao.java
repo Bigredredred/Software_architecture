@@ -1,4 +1,4 @@
-package Appearance;
+package pkg.Appearance;
 public class Cacao implements RawMaterial{
     private int SomeWholeCocoaBeans;
     private int SomeCocoaBeanPowder;

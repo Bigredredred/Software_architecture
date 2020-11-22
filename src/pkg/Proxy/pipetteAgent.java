@@ -1,4 +1,4 @@
-package Proxy;
+package pkg.Proxy;
 
 public class pipetteAgent implements pipette{
 

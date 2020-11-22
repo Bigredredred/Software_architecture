@@ -1,4 +1,4 @@
-package Flyweight;
+package pkg.Flyweight;
 
 public class ColdStorage {
     public static ColdStorage coldStorage;
